@@ -8,7 +8,7 @@ All you need to do is add a dependency on the micrometer-akka jar, add some conf
 
 The application.conf requires your dynatrace configs (API key and URI).
 
-This sample uses `micrometer-registry-dynatrace` to have the metrics pushed to Dynatrace.
+This sample uses [micrometer-registry-dynatrace](https://micrometer.io/docs/registry/dynatrace#_configuring) to have the metrics pushed to Dynatrace.
 This is setup in [Main.scala](https://github.com/pjfanning/micrometer-akka-dynatrace/blob/master/src/main/scala/com/example/akka/Main.scala).
 
 ```sbt clean run```
