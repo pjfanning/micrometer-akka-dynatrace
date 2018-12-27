@@ -3,7 +3,6 @@ name := "micrometer-akka-dynatrace"
 scalaVersion := "2.12.8"
 
 resolvers += Resolver.sonatypeRepo("releases")
-resolvers += Resolver.sonatypeRepo("snapshots")
 
 val akkaVersion = "2.5.19"
 val akkaHttpVersion = "10.1.5"
@@ -15,7 +14,7 @@ javaAgents += "org.aspectj" % "aspectjweaver" % "1.9.2" % "runtime"
 
 libraryDependencies ++= Seq(
   "io.kontainers" %% "micrometer-akka" % "0.9.1",
-  "io.micrometer" % "micrometer-registry-dynatrace" % micrometerVersion,
+  "io.kontainers" % "micrometer-registry-dynatrace" % micrometerVersion,
   "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-actor" % akkaVersion,

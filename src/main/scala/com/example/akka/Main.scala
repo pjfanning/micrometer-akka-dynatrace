@@ -22,7 +22,7 @@ object Main extends App {
   }
   val meterRegistry = new DynatraceMeterRegistry(dconfig, Clock.SYSTEM)
   AkkaMetricRegistry.setRegistry(meterRegistry)
-  
+
   new JvmMemoryMetrics().bindTo(meterRegistry)
   new JvmGcMetrics().bindTo(meterRegistry)
   new JvmThreadMetrics().bindTo(meterRegistry)
