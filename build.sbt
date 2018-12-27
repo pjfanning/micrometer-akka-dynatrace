@@ -5,7 +5,7 @@ scalaVersion := "2.12.8"
 resolvers += Resolver.sonatypeRepo("releases")
 
 val akkaVersion = "2.5.19"
-val akkaHttpVersion = "10.1.5"
+val akkaHttpVersion = "10.1.6"
 val kontainersMicrometerVersion = "1.1.2"
 
 enablePlugins(JavaAgent)
