@@ -6,15 +6,14 @@ resolvers += Resolver.sonatypeRepo("releases")
 
 val akkaVersion = "2.5.19"
 val akkaHttpVersion = "10.1.5"
-val micrometerVersion = "1.1.1"
-val prometheusVersion = "0.6.0"
+val kontainersMicrometerVersion = "1.1.2"
 
 enablePlugins(JavaAgent)
 javaAgents += "org.aspectj" % "aspectjweaver" % "1.9.2" % "runtime"
 
 libraryDependencies ++= Seq(
   "io.kontainers" %% "micrometer-akka" % "0.9.1",
-  "io.kontainers" % "micrometer-registry-dynatrace" % micrometerVersion,
+  "io.kontainers" % "micrometer-registry-dynatrace" % kontainersMicrometerVersion,
   "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-actor" % akkaVersion,
